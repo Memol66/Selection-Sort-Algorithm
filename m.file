@@ -1,0 +1,17 @@
+function sorted_array = selectionSort(array)
+    n = length(array);
+    for i = 1:n-1
+        min_index = i;
+        for j = i+1:n
+            if array(j) < array(min_index)
+                min_index = j;
+            end
+        end
+        if min_index ~= i
+            temp = array(i);
+            array(i) = array(min_index);
+            array(min_index) = temp;
+        end
+    end
+    sorted_array = array;
+end
