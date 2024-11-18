@@ -1,4 +1,4 @@
-# 0000111111111111111
+# 000
 #function
 function sorted_array = selectionSort(array)
     n = length(array);
